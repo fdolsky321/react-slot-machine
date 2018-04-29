@@ -1,0 +1,143 @@
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Kaushan Script', cursive;
+}
+button:focus {outline:0;}
+h1 {    
+  border: 1px solid #999;
+    width: 508px;
+    margin: 0 auto;
+  
+  background: linear-gradient(#656565, #101010);
+    font-size: 50px; 
+  color:#b9a831;
+}
+.App {
+  text-align:center;
+}
+.SlotMachine {
+  width:600px;
+  background: linear-gradient(to bottom, rgba(16,16,16,1) 0%, rgba(16,16,16,1) 70%, rgba(101,101,101,1) 71%, rgba(101,101,101,1) 95%, rgba(16,16,16,1) 96%, rgba(16,16,16,1) 100%);
+  margin:0 auto; 
+  padding-top:5px;
+     height: 300px;
+  position:relative;
+}
+.WheelWrapper {
+  width:570px;
+  display:flex;
+  justify-content:space-between;
+  margin:0 auto;
+         background: linear-gradient(#656565, #101010);
+    padding: 8px;
+  margin-bottom:20px;
+}
+.Wheel {
+  width:128px;
+  padding:0 20px; 
+  height:128px;
+  overflow:hidden;
+      border: 5px solid #a01717;
+  position:relative;
+      background: linear-gradient(#b9a831, #fff9d0, #b9a831);
+} 
+
+.Symbol { 
+  position:absolute; 
+  left:20px;
+}
+
+.StartButtonHandler {
+  
+      position: absolute;
+    right: -50px;
+    top: -20px;    
+  width: 10px;
+    height: 170px;
+   background: linear-gradient(-90deg, #fff9d0,#615d42);
+    transform: skew(-15deg);
+}
+
+.StartButtonHandler:after {
+      content: ' ';
+    width: 30px;
+    background: linear-gradient(#b9a831, #fff9d0, #b9a831);
+    height: 110px;
+    display: block;
+    margin-left: -20px;
+    transform: skew(15deg);
+    margin-top: 50px;
+}
+.StartButton {
+  width:60px;
+  height:60px;
+  border-radius:30px;
+  background-color:green; 
+  background: radial-gradient(top right, #ffa3a3, #a50909);
+        border: 1px solid #a50909;
+  cursor:pointer;    
+  margin-left: -25px;
+      transform: skew(10deg);
+    margin-top: -11px;
+}
+
+.StartButton:after {
+  content:'';
+  width:10px;
+  height:100px;
+  background-color:#000;
+}
+.StopButton {
+  width:100px;
+  height:100px;
+  border-radius:50px;
+     background: linear-gradient(#e00808, #a50909);
+    border: 1px solid #000;
+  cursor: pointer;
+      margin: 20px auto 0 auto;
+      transform: rotateX(60deg);
+      border: 4px solid #fff;
+    color: #fff;
+    font-size: 30px;
+  box-shadow: 0px 11px 5px 0px rgba(255,255,255,1);
+}
+
+@media (max-width:610px) {
+  h1 {    
+  border: 1px solid #999;
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 0;  
+    font-size: 40px;
+}
+  .SlotMachine {
+    width:250px;
+    padding-top:2px;
+  }
+  
+  .WheelWrapper {
+    width:300px;
+        margin-left: -30px;
+  }
+  
+  .Wheel {
+    height:98px;
+  }
+  
+  .Symbol {
+    width:100%;
+    height:auto;
+    left:0;
+  }
+  
+  .StopButton {
+    margin-left:-10px;
+  }
+  
+  .StartButtonHandler {
+    right: -20px;
+    top: 88px;
+  }
+}

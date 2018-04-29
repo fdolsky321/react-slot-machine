@@ -1,0 +1,18 @@
+import React from 'react';
+import Adapter from 'enzyme-adapter-react-16';
+import { configure,shallow } from 'enzyme'; 
+import PropTypes from 'prop-types';
+
+import Monkey from '../assets/img/monkey.png';
+import Symbol from '../components/Symbol';
+
+configure({ adapter: new Adapter() });
+test('Symbol component working', () => {
+  
+  const symbol = shallow(
+      <Symbol name="Monkey" src={Monkey} positionY={0} />);
+  
+                              
+  expect(symbol.instance().props.positionY).toEqual(0);
+}); 
+
