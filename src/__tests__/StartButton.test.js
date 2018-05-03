@@ -1,7 +1,6 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
-import { configure,shallow } from 'enzyme'; 
-import PropTypes from 'prop-types';
+import { configure,shallow } from 'enzyme';  
 import StartButton from '../components/StartButton';
 
 configure({ adapter: new Adapter() });

@@ -13,6 +13,7 @@ class SlotMachine extends Component {
     this.handleStart = this.handleStart.bind(this);
     this.handleStop = this.handleStop.bind(this);
     this.getActive = this.getActive.bind(this);
+    this.checkPrize = this.checkPrize.bind(this);
     this.results = [];
   }
   componentDidMount() {
@@ -66,8 +67,7 @@ class SlotMachine extends Component {
       
       prize = this.checkPrize()
       this.results = [];
-    }
-    console.log(this.results);
+    } 
     this.props.prize("You Won " + prize + " $");
   }
   
